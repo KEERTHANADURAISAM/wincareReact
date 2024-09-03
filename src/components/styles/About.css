@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+/* Base styles */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 580px);
+    gap: 40px;
+    margin-left: 80px;
+    margin-top: 180px;
+}
+
+.about-img {
+    height: auto;
+    width: 560px;
+    border-radius: 10px;
+}
+
+.about-head {
+    margin: 50px 0px 20px 0px;
+    border: 1px solid #DFE4FD;
+    padding: 8px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    color: #0B5ED7;
+    font-size: 20px;
+}
+
+.about-slogan {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: "Jost", sans-serif;
+    color: #011A41;
+}
+
+.about-text {
+    margin-top: 20px;
+}
+
+.tab-head {
+    border: 1px solid #DFE4FD;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.available-head {
+    display: flex;
+    margin-top: 50px;
+    border: 1px solid #DFE4FD;
+    border-radius: 2px;
+    margin-left: 80px;
+    padding: 20px;
+}
+
+.available-grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding-right: 5px;
+    gap: 25px;
+}
+
+.vr-line {
+    height: 100px;
+    color: #DFE4FD;
+    border-right: 1px solid #d7deff;
+}
+
+.available-title {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "Jost", sans-serif;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Large screens and desktops */
+@media (min-width: 1200px) {
+    .about-grid {
+        grid-template-columns: repeat(2, 580px);
+        margin-left: 100px;
+        margin-top: 200px;
+    }
+
+    .about-slogan {
+        font-size: 56px;
+    }
+
+    .available-grid {
+        grid-template-columns: repeat(3, auto);
+        gap: 30px;
+    }
+}
+
+/* Medium screens and tablets */
+@media (max-width: 992px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        margin-left: 40px;
+        margin-top: 100px;
+    }
+
+    .about-img {
+        width: 100%;
+        max-width: 480px;
+    }
+
+    .about-slogan {
+        font-size: 42px;
+    }
+
+    .available-head {
+        flex-direction: column;
+        margin-left: 40px;
+    }
+
+    .available-grid {
+        grid-template-columns: repeat(2, auto);
+        gap: 20px;
+    }
+}
+
+/* Small screens and mobile devices */
+@media (max-width: 576px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        margin-left: 20px;
+        margin-top: 60px;
+        gap: 20px;
+    }
+
+    .about-img {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .about-head {
+        font-size: 16px;
+        padding: 5px;
+        margin: 30px 0 10px 0;
+    }
+
+    .about-slogan {
+        font-size: 32px;
+    }
+
+    .about-text {
+        margin-top: 10px;
+    }
+
+    .tab-head {
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    .available-head {
+        flex-direction: column;
+        margin-left: 20px;
+        padding: 10px;
+    }
+
+    .available-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding-right: 0;
+    }
+
+    .available-title {
+        font-size: 18px;
+    }
+
+    .vr-line {
+        height: 50px;
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,24 @@
+.slider-img {
+    height: 400px; /* Corrected syntax */
+    width: 800px;  /* Corrected syntax */
+    border-radius: 30px; /* Corrected syntax */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+/* Media Query for screens up to 768px wide */
+@media (max-width: 768px) {
+    .slider-img {
+        height: 300px; /* Reduce height for smaller screens */
+        width: 10%;   /* Use full width of the container */
+        border-radius: 20px; /* Smaller border-radius for smaller screens */
+    }
+}
+
+/* Media Query for screens up to 480px wide */
+@media (max-width: 480px) {
+    .slider-img {
+        height: 200px; /* Further reduce height for very small screens */
+        width: 100%;   /* Keep full width of the container */
+        border-radius: 15px; /* Even smaller border-radius */
+    }
+}

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.sigin-form{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.login-img{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(29, 28, 28, 0.2), 0 6px 20px 0 rgba(14, 13, 13, 0.19);
+    height:550px;
+    width: 310px;
+}
+.login-input-div{
+    position: absolute;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.login-h1-tag{
+    color: #49688D;
+    margin-top: 120px;
+    font-family:  sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.login-input{
+    /* border: 1px solid #87baf7; */
+    box-shadow: 0 4px 8px 0 rgba(29, 28, 28, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    border: none;
+    width: 230px;
+    padding: 10px;
+padding-left: 8px;
+}
+.sigin-label{
+    display: flex;
+    color: #49688D;
+    font-family:  sans-serif;
+    
+    font-style: normal;
+}
+.sigin-label-forgot{
+   
+}

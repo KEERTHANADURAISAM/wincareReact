@@ -1,0 +1,157 @@
+.footer-div {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  background-color: #011A41;
+  color: whitesmoke;
+  padding: 60px;
+  margin-top: 50px;
+}
+
+.ofc-content-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ofc-head {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Jost", sans-serif;
+}
+
+.ofc-span {
+  font-family: "Open Sans", sans-serif;
+}
+
+.ofc-social-icon {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.ofc-div {
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+}
+
+.service-span {
+  font-family: "Open Sans", sans-serif;
+  visibility: visible;
+  animation-delay: 0.3;
+  transition: all 0.3s linear;
+  animation-timing-function: linear;
+}
+
+.service-span:hover {
+  letter-spacing: 1px;
+  animation-name: fadeIn;
+  cursor: pointer;
+  color: #2D50D6;
+  transform: scale(1.5);
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.footer-news-div {
+  background-color: #ffff;
+  height: 50px;
+  width: 270px;
+  padding: 15px;
+  border-radius: 5px;
+  color: black;
+}
+
+.foot-btn {
+  background-color: #2D50D6;
+  top: 90%;
+  left: 40%;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  color: whitesmoke;
+}
+
+.greater-div {
+  display: inline;
+}
+
+.sub-footer {
+  background-color: #000B1C;
+  padding: 30px;
+  color: RGB(223, 228, 253);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foot-copyright {
+  margin-left: 50px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.site-name {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.site-name:hover {
+  color: #2D50D6;
+  cursor: pointer;
+}
+
+/* Media Query for responsive design */
+@media (max-width: 768px) {
+  .footer-div {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 40px;
+      margin-top: 30px;
+  }
+
+  .footer-news-div {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+  }
+
+  .foot-btn {
+      width: 100%;
+      padding: 10px;
+  }
+
+  .sub-footer {
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+  }
+
+  .foot-copyright {
+      margin-left: 0;
+      margin-top: 10px;
+  }
+}
+
+/* Media Query for even smaller screens */
+@media (max-width: 480px) {
+  .footer-div {
+      grid-template-columns: 1fr;
+      padding: 20px;
+      margin-top: 20px;
+  }
+
+  .ofc-head {
+      font-size: 20px;
+  }
+
+  .footer-news-div,
+  .foot-btn {
+      width: 100%;
+  }
+
+  .ofc-social-icon {
+      justify-content: center;
+  }
+}

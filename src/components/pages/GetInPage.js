@@ -1,6 +1,8 @@
 import React from 'react'
 import "../styles/GetInPage.css";
 import contact from '../media/Untitled (2).png'
+import { fadeIn } from './Variant';
+import { motion } from "framer-motion"
 const GetInPage = () => {
     const myStyle = {
         backgroundColor:'#3F66FC',
@@ -12,7 +14,13 @@ const GetInPage = () => {
     };
   return (
     <div style={myStyle}>
-
+ <motion.div
+          variants={fadeIn("right", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          
+        >
     <form className='getIn-form'>
         <div className='get-card'>
             <div className='get-headers'>
@@ -33,7 +41,7 @@ const GetInPage = () => {
 </div>
         </div>
     </form>
-
+    </motion.div>
 
     </div>
   )

@@ -48,7 +48,7 @@ const Footer = () => {
     
 </div>
 <div className='ofc-div'>
-    <h4 className='ofc-head'>Services</h4>
+    <h4 className='ofc-head'></h4>
     <IconContext.Provider
       value={{ color: 'white', size: '15px' }}
     >
